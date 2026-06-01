@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Power - Chainsaw Man</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+body{
+    background-color:#d8b7b7;
+}
+
+.container{
+    width:100%;
+    min-height:100vh;
+    background:#532121;
+}
+
+/* HEADER */
+
+header{
+    background:#5b1619;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 25px;
+}
+
+.logo{
+    font-size:4rem;
+    color:#d69a9a;
+    font-weight:bold;
+}
+
+nav{
+    display:flex;
+    gap:30px;
+}
+
+nav a{
+    color:#f2d9d9;
+    text-decoration:underline;
+    font-size:1.8rem;
+    font-weight:bold;
+}
+
+.login{
+    color:#f2d9d9;
+    text-decoration:underline;
+    font-size:1.8rem;
+    font-weight:bold;
+}
+
+/* BANNER */
+
+.banner{
+    width:96%;
+    margin:20px auto;
+    border-radius:30px;
+    overflow:hidden;
+}
+
+.banner img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    display:block;
+}
+
+/* CONTENT */
+
+.content{
+    display:flex;
+    justify-content:space-between;
+    gap:20px;
+    padding:0 20px 20px;
+}
+
+.texto{
+    flex:1;
+    color:white;
+}
+
+.texto h2{
+    color:#d69a9a;
+    font-size:3rem;
+    margin-bottom:10px;
+}
+
+.texto p{
+    font-size:1.8rem;
+    line-height:1.5;
+    font-weight:bold;
+}
+
+/* CARDS */
+
+.cards{
+    display:flex;
+    gap:30px;
+}
+
+.card{
+    width:200px;
+    height:200px;
+    background:#64181c;
+    border-radius:25px;
+    padding:10px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.card img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    border-radius:20px;
+}
+
+/* FOOTER */
+
+footer{
+    background:#d8b7b7;
+    text-align:center;
+    color:white;
+    font-size:2rem;
+    font-weight:bold;
+    padding:10px;
+}
+
+@media(max-width:900px){
+
+    .content{
+        flex-direction:column;
+    }
+
+    .cards{
+        justify-content:center;
+        flex-wrap:wrap;
+    }
+
+    .logo{
+        font-size:2.5rem;
+    }
+
+    nav a,
+    .login{
+        font-size:1.2rem;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <header>
+        <nav>
+            <a href="#">home</a>
+            <a href="#">sobre</a>
+        </nav>
+
+        <div class="logo">Power</div>
+
+        <a href="#" class="login">login</a>
+    </header>
+
+    <section class="banner">
+        <img src="ban.PNG" alt="Power">
+    </section>
+
+    <section class="content">
+
+        <div class="texto">
+            <h2>Aliados Power</h2>
+
+            <p>
+                Power, a "Rainha do Sangue" e uma das Fiends
+                Infernais mais icônicas de Chainsaw Man,
+                desenvolve relações complexas ao longo da obra.
+                Embora inicialmente egoísta e agressiva, ela forma
+                laços profundos com personagens chave.
+            </p>
+        </div>
+
+        <div class="cards">
+
+            <div class="card">
+                <img src="denji.jpg" alt="Denji">
+            </div>
+
+            <div class="card">
+                <img src="aki.jfif" alt="Aki Hayakawa">
+            </div>
+
+            <div class="card">
+                <img src="pochita.jfif" alt="Pochita">
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer>
+        copyright Bruno Z. - ETEC - IW1 - Prof. Bruno
+    </footer>
+
+</div>
+
+</body>
+</html>
